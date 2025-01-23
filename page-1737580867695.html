@@ -1,0 +1,1349 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="e4aecb7e-ca9c-4866-82ec-12e5562bd4bd" data-section-id="e4aecb7e-ca9c-4866-82ec-12e5562bd4bd">
+
+<htmlCode>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Pratap Singh - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+        html { scroll-behavior: smooth; }
+        .active { @apply bg-neutral-700 text-white; }
+    </style>
+</head>
+<body class="bg-[#E5E7EB]">
+    <div id="root" class="flex min-h-screen">
+        <!-- Sidebar Navigation -->
+        <nav class="hidden lg:flex flex-col w-64 bg-white border-r border-neutral-200/30 fixed h-full">
+            <div class="p-4 border-b border-neutral-200/30">
+                <h1 class="text-xl font-bold">Abhay Singh</h1>
+                <p class="text-sm text-neutral-600">Full Stack Developer</p>
+            </div>
+            
+            <div class="flex-1 py-4">
+                <a href="#hero" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all active">Home</a>
+                <a href="#about" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all">About</a>
+                <a href="#skills" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all">Skills</a>
+                <a href="#projects" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all">Projects</a>
+                <a href="#experience" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all">Experience</a>
+                <a href="#contact" class="block px-4 py-2 mb-1 text-neutral-700 hover:bg-neutral-100 transition-all">Contact</a>
+            </div>
+
+            <div class="p-4 border-t border-neutral-200/30">
+                <div class="flex items-center space-x-3">
+                    <img src="/assets/public.png" alt="Profile" class="w-8 h-8 rounded-full">
+                    <div>
+                        <p class="text-sm font-medium">barry59634@gmail.com</p>
+                        <!-- <button class="text-xs text-neutral-600 hover:text-neutral-900">Settings</button> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div x-data="{ isOpen: false }" class="lg:hidden">
+            <button 
+                @click="isOpen = !isOpen"
+                type="button"
+                class="fixed top-4 right-4 z-50 p-2 rounded-lg bg-neutral-800 text-white hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-600"
+                aria-controls="mobile-menu"
+                :aria-expanded="isOpen"
+            >
+                <span class="sr-only">Open menu</span>
+                <svg x-show="!isOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg x-show="isOpen" x-cloak class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div
+                x-show="isOpen"
+                x-cloak
+                @click.away="isOpen = false"
+                @resize.window="if (window.innerWidth > 1024) isOpen = false"
+                x-transition:enter="transition ease-out duration-100 transform"
+                x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75 transform"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-95"
+                class="fixed inset-0 z-40 bg-neutral-800/80 backdrop-blur-lg lg:hidden"
+                id="mobile-menu"
+            >
+                <div class="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl px-6 py-6">
+                    <div class="mb-8">
+                        <h2 class="text-xl font-bold">Abhay Singh</h2>
+                        <p class="text-sm text-neutral-600">Full Stack Developer</p>
+                    </div>
+                    
+                    <div class="space-y-1">
+                        <a href="#hero" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">Home</a>
+                        <a href="#about" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">About</a>
+                        <a href="#skills" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">Skills</a>
+                        <a href="#projects" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">Projects</a>
+                        <a href="#experience" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">Experience</a>
+                        <a href="#contact" class="block py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100 rounded-lg px-3">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 ml-0 lg:ml-64 overflow-y-auto">
+            <!-- Header -->
+            <header class="sticky top-0 z-30 bg-white border-b border-neutral-200/30 px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-semibold">Dashboard</h2>
+                    <div class="flex items-center space-x-4">
+                        <button class="p-2 hover:bg-neutral-100 rounded-lg">
+                            <svg class="w-6 h-6 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                            </svg>
+                        </button>
+                        <button class="flex items-center space-x-2 hover:bg-neutral-100 rounded-lg p-2">
+                            <img src="/assets/public.png" alt="Profile" class="w-8 h-8 rounded-full">
+                            <span class="hidden sm:inline text-sm font-medium">Abhay Singh</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <MountPoint>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle active state for navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    
+    function setActiveLink() {
+        const hash = window.location.hash || '#hero';
+        navLinks.forEach(link => {
+            if(link.getAttribute('href') === hash) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', setActiveLink);
+    setActiveLink();
+});
+</script></element><element id="409655e7-6087-4b81-a01e-b0cc2a4103ed" data-section-id="409655e7-6087-4b81-a01e-b0cc2a4103ed">
+
+<htmlCode>
+<section id="hero" class="min-h-screen bg-white px-4 sm:px-6 lg:px-8 py-32 flex items-center">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+                        Hi, I'm Abhay Pratap Singh
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl text-neutral-600">
+                        Full Stack Developer & 2024 B.Tech Graduate
+                    </h2>
+                    <p class="text-lg text-neutral-600 leading-relaxed">
+                        Specializing in building exceptional digital experiences with modern technologies. Currently focused on AI-powered applications and scalable web solutions.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-6 py-3 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800 transition-colors duration-300">
+                        Get in Touch
+                    </a>
+                    <a href="/assets/Abhay_Resume(1).pdf" download class="px-6 py-3 border border-neutral-300 rounded-lg hover:border-neutral-400 transition-colors duration-300">
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="https://github.com/Abhayy1202" target="_blank" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/abhay-singh1202" target="_blank" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden lg:block relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-neutral-100 to-transparent rounded-full animate-pulse"></div>
+                <img src="/assets/public.png" alt="Abhay Pratap Singh" class="relative w-96 h-96 rounded-full mx-auto object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="b1af115f-9ef7-45e0-9f39-069b28b3f0dd" data-section-id="b1af115f-9ef7-45e0-9f39-069b28b3f0dd">
+
+<htmlCode>
+<section id="about" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Background</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        I'm a 2024 B.Tech graduate specializing in Information Technology, passionate about building innovative solutions using cutting-edge technologies. With a strong foundation in both frontend and backend development, I create scalable and efficient applications that solve real-world problems.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Education</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-medium">Jabalpur Engineering College (B.Tech)</h4>
+                            <!-- <h4 class="font-medium">Bachelor of Technology</h4> -->
+                            <p class="text-neutral-600">Information Technology</p>
+                            <p class="text-sm text-neutral-500">2020 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Interests</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Web Development</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">AI/ML</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Cloud Computing</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">System Design</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Technical Expertise</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium mb-2">Frontend Development</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">ReactJS</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">HTML/CSS</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">TailwindCSS</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">ReduxToolkit</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-2">Backend Development</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Node.js</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">MongoDB</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">SQL</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Docker</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">CI/CD</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-2">AI/ML Tools</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">LangChain</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Google Gemini</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">OpenAI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">Current Focus</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        Currently focusing on AI-powered applications and exploring the integration of large language models in web applications. Actively working on projects that combine traditional web development with modern AI capabilities to create more intelligent and user-friendly solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="ffac4c92-621a-4def-b00e-a2b834eb0e56" data-section-id="ffac4c92-621a-4def-b00e-a2b834eb0e56">
+
+<htmlCode>
+<section id="skills" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Skills & Expertise</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Frontend Development -->
+            <div class="border border-neutral-200/30 rounded-xl p-6 bg-neutral-50">
+                <div class="flex items-center mb-6">
+                    <svg class="w-6 h-6 mr-3 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold">Frontend Development</h3>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">ReactJS</span>
+                            <span class="text-sm text-neutral-600">80%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">JavaScript</span>
+                            <span class="text-sm text-neutral-600">85%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">TailwindCSS</span>
+                            <span class="text-sm text-neutral-600">75%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="border border-neutral-200/30 rounded-xl p-6 bg-neutral-50">
+                <div class="flex items-center mb-6">
+                    <svg class="w-6 h-6 mr-3 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold">Backend Development</h3>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Node.js</span>
+                            <span class="text-sm text-neutral-600">80%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">MongoDB</span>
+                            <span class="text-sm text-neutral-600">70%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Docker</span>
+                            <span class="text-sm text-neutral-600">75%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML Tools -->
+            <div class="border border-neutral-200/30 rounded-xl p-6 bg-neutral-50">
+                <div class="flex items-center mb-6">
+                    <svg class="w-6 h-6 mr-3 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold">AI/ML Tools</h3>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">LangChain</span>
+                            <span class="text-sm text-neutral-600">70%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Google Gemini</span>
+                            <span class="text-sm text-neutral-600">80%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">OpenAI Integration</span>
+                            <span class="text-sm text-neutral-600">65%</span>
+                        </div>
+                        <div class="w-full bg-neutral-200 rounded-full h-2">
+                            <div class="bg-neutral-700 h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Problem Solving -->
+            <div class="border border-neutral-200/30 rounded-xl p-6 bg-neutral-50">
+                <h3 class="text-xl font-semibold mb-4">Problem Solving</h3>
+                <div class="space-y-2">
+                    <p class="flex items-center text-neutral-600">
+                        <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        500+ Problems solved on GeeksForGeeks
+                    </p>
+                    <p class="flex items-center text-neutral-600">
+                        <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Active contributor on LeetCode
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div class="border border-neutral-200/30 rounded-xl p-6 bg-neutral-50">
+                <h3 class="text-xl font-semibold mb-4">Additional Skills</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Git</span>
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">REST APIs</span>
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">SQL</span>
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">C++</span>
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">System Design</span>
+                    <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">AWS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="68dd67da-9c9f-436a-9574-207cbb406da3" data-section-id="68dd67da-9c9f-436a-9574-207cbb406da3">
+
+<htmlCode>
+<section id="projects" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Featured Projects</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <!-- VidVerse Project -->
+            
+            <div class="border border-neutral-200/30 rounded-xl overflow-hidden">
+                <div class="h-64 bg-neutral-100">
+                    <img src="https://placehold.co/600x400?text=Blogrealm" alt="VBlogrealm Project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 bg-neutral-50">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold">Blogrealm</h3>
+                        <div class="flex space-x-2">
+                            <a href="https://www.github.com/Abhayy1202/blogrealm" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="https://blog-realm.vercel.app/" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-4">A comprehensive blog platform with a user-friendly interface, seamless login/logout, CRUD operations for users/admins, Appwrite as backend as a service, ReactJS, Tailwind CSS, Redux Toolkit, and new content generation using LLM.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">ReactJS</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Appwrite</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">HuggingFace</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">TailwindCSS</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Docker</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- PDFGenie Project -->
+            <div class="border border-neutral-200/30 rounded-xl overflow-hidden">
+                <div class="h-64 bg-neutral-100">
+                    <img src="https://placehold.co/600x400?text=PDFGenie" alt="PDFGenie Project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 bg-neutral-50">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold">PDFGenie</h3>
+                        <div class="flex space-x-2">
+                            <a href="https://www.github.com/Abhayy1202/PdfGenie" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="https://pdf-genie-101.vercel.app/" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-4">AI-powered PDF chatbot using LangChain and Google Gemini API. Enables intelligent conversation with PDF documents through natural language processing and utilizing Vector database.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">LangChain</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Google Gemini</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">SupaBase</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-neutral-200/30 rounded-xl overflow-hidden">
+                <div class="h-64 bg-neutral-100">
+                    <img src="https://placehold.co/600x400?text=VidVerse" alt="VidVerse Project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 bg-neutral-50">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold">VidVerse</h3>
+                        <div class="flex space-x-2">
+                            <a href="https://www.github.com/Abhayy1202/vidverse" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-4">A NodeJS backend system for a YouTube-like video streaming experience, featuring watch history, likes, comments, video ownership management, and MongoDB database with Aggregation Pipelines.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">NodeJS</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">JWT</span>
+                        <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <a href="https://github.com/Abhayy1202" target="_blank" class="inline-flex items-center px-6 py-3 border border-neutral-300 rounded-lg hover:border-neutral-400 transition-colors duration-300">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
+                View More Projects on GitHub
+            </a>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="3f39dc25-1d7a-497f-b210-bbd0ed4e5c97" data-section-id="3f39dc25-1d7a-497f-b210-bbd0ed4e5c97">
+
+<htmlCode>
+<section id="experience" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Work Experience</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="relative border-l border-neutral-200/30 pl-8 ml-4">
+            <!-- Indian Railways Experience -->
+            <div class="mb-16 relative">
+                <div class="absolute -left-12 top-0 w-8 h-8 bg-white border border-neutral-200/30 rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Software Engineering Intern</h3>
+                            <p class="text-neutral-600">Indian Railways</p>
+                        </div>
+                        <div class="text-sm text-neutral-500">
+                            <p>Summer 2023</p>
+                            <p>2 Months</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium mb-2">Key Responsibilities</h4>
+                            <ul class="list-disc list-inside space-y-2 text-neutral-600">
+                                <li>Maintained and optimized ticket reservation systems using SQL and C++</li>
+                                <li>Improved database query performance by 40% through optimization</li>
+                                <li>Implemented error handling and logging mechanisms</li>
+                                <li>Collaborated with senior developers on system architecture</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium mb-2">Technologies Used</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">SQL</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">C++</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Git</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Linux</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium mb-2">Key Achievements</h4>
+                            <ul class="list-disc list-inside space-y-2 text-neutral-600">
+                                <li>Reduced system downtime by 25% through improved error handling</li>
+                                <li>Received recognition for outstanding performance</li>
+                                <li>Contributed to the development of new features</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Development -->
+            <div class="relative">
+                <div class="absolute -left-12 top-0 w-8 h-8 bg-white border border-neutral-200/30 rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Professional Development</h3>
+                            <p class="text-neutral-600">Self-Directed Learning & Projects</p>
+                        </div>
+                        <div class="text-sm text-neutral-500">
+                            <p>2020 - Present</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium mb-2">Achievements</h4>
+                            <ul class="list-disc list-inside space-y-2 text-neutral-600">
+                                <li>Solved 400+ coding problems on GeeksForGeeks and LeetCode</li>
+                                <li>Developed multiple full-stack applications</li>
+                                <li>Mastered modern web technologies and frameworks</li>
+                                <li>Contributed to open-source projects</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium mb-2">Skills Developed</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Problem Solving</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Data Structures</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">Algorithms</span>
+                                <span class="px-3 py-1 bg-neutral-200 rounded-full text-sm">System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="1dd5cd9b-be5d-43ad-9847-df134aa0751c" data-section-id="1dd5cd9b-be5d-43ad-9847-df134aa0751c">
+
+<htmlCode>
+<section id="achievements" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Achievements</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Coding Achievements -->
+            <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-neutral-100 rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold">Competitive Programming</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 bg-white border border-neutral-200/30 rounded-lg">
+                        <div>
+                            <h4 class="font-medium">GeeksForGeeks</h4>
+                            <p class="text-sm text-neutral-600">300+ Problems Solved</p>
+                        </div>
+                        <div class="w-16 h-16">
+                            <div class="w-full h-full relative">
+                                <svg viewBox="0 0 36 36" class="w-full h-full">
+                                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#E5E7EB" stroke-width="3"></path>
+                                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#4B5563" stroke-width="3" stroke-dasharray="75, 100"></path>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center text-sm font-medium">75%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 bg-white border border-neutral-200/30 rounded-lg">
+                        <div>
+                            <h4 class="font-medium">LeetCode</h4>
+                            <p class="text-sm text-neutral-600">200+ Problems Solved</p>
+                        </div>
+                        <div class="w-16 h-16">
+                            <div class="w-full h-full relative">
+                                <svg viewBox="0 0 36 36" class="w-full h-full">
+                                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#E5E7EB" stroke-width="3"></path>
+                                    <path d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#4B5563" stroke-width="3" stroke-dasharray="65, 100"></path>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center text-sm font-medium">65%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Achievements -->
+            <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-neutral-100 rounded-xl flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold">Technical Milestones</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-white border border-neutral-200/30 rounded-lg">
+                        <h4 class="font-medium mb-2">Full Stack Development</h4>
+                        <ul class="space-y-2 text-neutral-600">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Built 2 major full-stack applications
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Integrated AI/ML capabilities
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-white border border-neutral-200/30 rounded-lg">
+                        <h4 class="font-medium mb-2">Professional Growth</h4>
+                        <ul class="space-y-2 text-neutral-600">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Successfully completed internship at Indian Railways
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Optimized system performance by 40%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                <h3 class="text-xl font-semibold mb-6">Skills Progress</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Problem Solving</span>
+                                <span class="text-sm text-neutral-600">90%</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-neutral-700 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Data Structures</span>
+                                <span class="text-sm text-neutral-600">85%</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-neutral-700 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Algorithms</span>
+                                <span class="text-sm text-neutral-600">80%</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-neutral-700 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">System Design</span>
+                                <span class="text-sm text-neutral-600">75%</span>
+                            </div>
+                            <div class="w-full bg-neutral-200 rounded-full h-2">
+                                <div class="bg-neutral-700 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="b6661be2-4c7a-445c-a267-628fbb6f23b2" data-section-id="b6661be2-4c7a-445c-a267-628fbb6f23b2">
+
+<htmlCode>
+<section id="contact" class="min-h-screen bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Get In Touch</h2>
+            <div class="mt-2 h-1 w-20 bg-neutral-900 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-neutral-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-400 focus:border-neutral-400">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-neutral-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-400 focus:border-neutral-400">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-neutral-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-400 focus:border-neutral-400"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-neutral-900 text-white py-3 px-6 rounded-lg hover:bg-neutral-800 transition-colors duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-6">
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium">Email</p>
+                                <a href="mailto:barry59634@gmail.com" class="text-neutral-600 hover:text-neutral-900">barry59634@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium">Location</p>
+                                <p class="text-neutral-600">Jabalpur, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-6">Connect With Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Abhayy1202" target="_blank" class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center hover:bg-neutral-200 transition-colors">
+                            <svg class="w-5 h-5 text-neutral-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/abhay-singh1202" target="_blank" class="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center hover:bg-neutral-200 transition-colors">
+                            <svg class="w-5 h-5 text-neutral-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 border border-neutral-200/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-6">Resume</h3>
+                    <a href="/assets/Abhay_Resume(1).pdf" download class="flex items-center justify-center w-full py-3 px-6 bg-neutral-100 text-neutral-700 rounded-lg hover:bg-neutral-200 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode></element><element id="44f4c85d-ec2f-451e-a679-d8fa8365dde9" data-section-id="44f4c85d-ec2f-451e-a679-d8fa8365dde9">
+
+<htmlCode>
+<footer id="footer" class="bg-white border-t border-neutral-200/30">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-lg font-semibold mb-4">Abhay Pratap Singh</h3>
+                <p class="text-neutral-600 mb-4">Full Stack Developer specializing in modern web technologies and AI integration.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/Abhayy1202" target="_blank" class="text-neutral-600 hover:text-neutral-900">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/abhay-singh1202" target="_blank" class="text-neutral-600 hover:text-neutral-900">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-4">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#about" class="text-neutral-600 hover:text-neutral-900">About</a></li>
+                    <li><a href="#skills" class="text-neutral-600 hover:text-neutral-900">Skills</a></li>
+                    <li><a href="#projects" class="text-neutral-600 hover:text-neutral-900">Projects</a></li>
+                    <li><a href="#experience" class="text-neutral-600 hover:text-neutral-900">Experience</a></li>
+                    <li><a href="#contact" class="text-neutral-600 hover:text-neutral-900">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-4">Contact</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="mailto:barry59634@gmail.com" class="text-neutral-600 hover:text-neutral-900">
+                            barry59634@gmail.com
+                        </a>
+                    </li>
+                    <li class="text-neutral-600">
+                        Jabalpur, India
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-neutral-200/30">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-neutral-600 text-sm">
+                    © 2024 Abhay Pratap Singh. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#hero" class="text-neutral-600 hover:text-neutral-900 text-sm">
+                        Back to top ↑
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
